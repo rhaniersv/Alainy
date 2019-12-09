@@ -1,0 +1,164 @@
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="home" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>P</b>I</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Projeto</b> Integrador</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+      <ul class="sidebar-menu">
+        <li class="header">MENU PRINCIPAL</li>
+        <li>
+          <a href="bem">
+            <i class="fa fa-barcode"></i> <span>Cadastrar Bem</span>
+          </a>
+        </li>
+        <li>
+          <a href="baixa">
+            <i class="fa fa-arrow-circle-down"></i> <span>Baixar Bem</span>
+          </a>
+        </li>
+        <li>
+          <a href="lista-bens">
+            <i class="fa fa-table"></i> <span>Lista de Bens</span>
+          </a>
+        </li>
+
+      </ul>
+
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <router-outlet>
+
+      <div class="col-sm-12">
+        <h3 class="box-title">Bens ativos :</h3>
+        <table class="table table-bordered table-hover dataTable">
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Vida útil</th>
+                <th>Valor residual</th>
+                <th>Preço de aquisição</th>
+                <th>Data da aquisição</th>
+                <th>Imóvel</th>
+                <th>Usado</th>
+                <th>Carga horária</th>
+              </tr>
+
+              <tr *ngFor="let a of bems">
+                <td>{{a.id}}</td>
+                <td>{{a.nome}}</td>
+                <td>{{a.vidaUtil}}</td>
+                <td>{{a.valorResidual}}</td>
+                <td>{{a.precoAquisicao}}</td>
+                <td>{{a.dataAquisicao}}</td>
+                <td>{{a.imovel}}</td>
+                <td>{{a.usado}}</td>
+                <td>{{a.cargaHoraria}}</td>
+
+                <td>
+                  <button type="button" (click)="delete(a);" class="btn btn-block">X</button>
+                </td>
+
+              </tr>
+        </table>
+      </div>
+
+
+    </router-outlet>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Version</b> 1.0.1
+    </div>
+    <strong>Copyright &copy; 2019 <a href="https://github.com/Done-Ribeiro" target="_blank">Done Ribeiro</a>.</strong>
+    All rights
+    reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Create the tabs -->
+    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+      <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Home tab content -->
+      <div class="tab-pane" id="control-sidebar-home-tab">
+        <h3 class="control-sidebar-heading">Recent Activity</h3>
+        <ul class="control-sidebar-menu">
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Aniversário do Fundador</h4>
+
+                <p>Seu aniversário é em 8 de Novembro</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-user bg-yellow"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Done criou esse site</h4>
+
+                <p>Fone (62) 9-1234-5678</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Mande um e-mail</h4>
+
+                <p>www.done_@hotmail.com</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-file-code-o bg-green"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Mais de 5 projetos</h4>
+
+                <p>Executados com excelência</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </aside>
+
+  <div class="control-sidebar-bg"></div>

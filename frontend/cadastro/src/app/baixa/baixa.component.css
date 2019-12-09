@@ -1,0 +1,42 @@
+.container {
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+}
+
+label {
+  padding-top: 15px;
+}
+
+.botoes_form {
+  position: relative;
+  left: 12%;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.lista_botoes {
+  background-color: #AB4AFF;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+#form_checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.botao_excluir {
+  background-color: #AB4AFF;
+  color: white;
+  font-weight: bold;
+}
+
+.tabela_baixados{
+  padding-top: 30px;
+}
+
+.tabela_baixa {
+  margin-top: 15px;
+}
