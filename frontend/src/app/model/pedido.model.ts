@@ -1,4 +1,4 @@
-import {FormaPagamento} from './payment.model';
+import {FormaPagamento} from './pagamento.model';
 import {Pessoa} from './pessoa.model';
 
 export class Pedido {

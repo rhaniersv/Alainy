@@ -1,5 +1,5 @@
 import {Pessoa} from './pessoa.model';
-import {FormaPagamento} from './payment.model';
+import {FormaPagamento} from './pagamento.model';
 import {Pedido} from './pedido.model';
 
 export class ItensPedido {
