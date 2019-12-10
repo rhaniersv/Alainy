@@ -1,4 +1,4 @@
-export class FormaPagamento {
+export class Pagamento {
   descricao: string;
   numMaxParc: number;
   numPadraoParc: number;
