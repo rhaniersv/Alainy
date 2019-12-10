@@ -7,6 +7,7 @@ import {PessoaComponent} from './pessoa/pessoa.component';
 import {ProdutoComponent} from './produto/produto.component';
 import {GrupoprodutoComponent} from './grupoproduto/grupoproduto.component';
 import {PagesRoutingModule} from './pages-routing.module';
+import {LojaComponent} from './loja/loja.component';
 
 @NgModule({
   declarations: [
@@ -14,10 +15,10 @@ import {PagesRoutingModule} from './pages-routing.module';
     PagamentoComponent,
     PessoaComponent,
     ProdutoComponent,
-    GrupoprodutoComponent
+    GrupoprodutoComponent,
+    LojaComponent
   ],
   imports: [
-
     CommonModule,
     FormsModule,
     PagesRoutingModule

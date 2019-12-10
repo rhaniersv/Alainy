@@ -9,7 +9,7 @@ import {ProdutoComponent} from './produto/produto.component';
 
 
 const pagesRoutes: Routes = [
-  {path: '', component: LojaComponent},
+  {path: 'loja', component: LojaComponent},
   {path: 'carrinho', component: CarrinhoComponent},
   {path: 'grupoproduto', component: GrupoprodutoComponent},
   {path: 'pagamento', component: PagamentoComponent},
