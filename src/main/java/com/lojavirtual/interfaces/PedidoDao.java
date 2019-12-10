@@ -1,8 +1,7 @@
 package com.lojavirtual.interfaces;
 
-import org.springframework.data.repository.CrudRepository;
-
 import com.lojavirtual.models.Pedido;
+import org.springframework.data.repository.CrudRepository;
 
 public interface PedidoDao extends CrudRepository<Pedido, Integer> {
 
